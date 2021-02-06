@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.score {
+  font-size: 2rem;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.start {
+  font-size: 2rem;
+  width: 200px;
+  margin: 0 auto;
+}
+.start.play {
+  display: none;
+}
+
+.left, .right {
+  display: none;
+}
+
+.left.play, .right.play {
+  display: block;
+  width: 50%;
+  position: absolute;
+}
+.left.play {
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.right.play {
+  height: 100vh;
+  top: 0;
+  left: 50%;
+}
+
+.canvas {
+  background-color: lightgray;
+  display: block;
+  margin: 20px auto;
+}
+
+.res-container, .res {
+  display: none;
+}
+.res-container.gameover {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(128, 128, 128, 0.5);
+  backdrop-filter: blur(5px);
+}
+.res.gameover {
+  display: block;
+  width: 200px;
+  height: 100px;
+  background-color: #fff;
+  margin: 200px auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
